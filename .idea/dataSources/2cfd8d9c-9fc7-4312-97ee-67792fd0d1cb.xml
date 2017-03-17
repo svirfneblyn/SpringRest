@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - jmp@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="jmp">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sakila"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="test"/>
+    <schema id="8" name="world"/>
+    <schema id="9" name="zernofond_dev"/>
+    <table id="10" parent="1" name="persons"/>
+    <table id="11" parent="1" name="employees"/>
+    <table id="12" parent="1" name="positions"/>
+    <table id="13" parent="1" name="departments"/>
+    <table id="14" parent="1" name="departaments"/>
+    <table id="15" parent="1" name="stuff_hierarchy"/>
+    <column id="16" parent="10" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="17" parent="10" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="19" parent="11" name="firstName">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="20" parent="11" name="secondName">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="21" parent="11" name="lastName">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="22" parent="11" name="department_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="23" parent="11" name="position_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="24" parent="11" name="manager_id">
+      <data-type>bigint(10)|0</data-type>
+    </column>
+    <key id="25" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="26" parent="12" name="position_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="27" parent="12" name="position">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="28" parent="12" name="PRIMARY">
+      <columns>position_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="29" parent="13" name="department_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="30" parent="13" name="department">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="31" parent="13" name="PRIMARY">
+      <columns>department_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="32" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="33" parent="14" name="department">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="34" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="35" parent="15" name="manger_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="36" parent="15" name="subordinate_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="37" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="38" parent="15" name="PRIMARY">
+      <columns>manger_id
+subordinate_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
