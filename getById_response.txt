@@ -1,0 +1,17 @@
+/getById
+
+{
+	"id": 5,
+	"firstName": "Mark",
+	"secondName": "Andreevich",
+	"lastName": "Shagal",
+	"managerId": 4,
+	"department": {
+		"id": 5,
+		"department": "POPO"
+	},
+	"position": {
+		"id": 2,
+		"position": "contractor"
+	}
+}
