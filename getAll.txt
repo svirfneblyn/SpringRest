@@ -1,0 +1,74 @@
+/getAll
+
+
+
+[{
+	"id": 1,
+	"firstName": "Francisk",
+	"secondName": "Tadeushevich",
+	"lastName": "Skaryna",
+	"department": {
+		"id": 1,
+		"department": "security"
+	},
+	"position": {
+		"id": 2,
+		"position": "contractor"
+	}
+},
+{
+	"id": 2,
+	"firstName": "Tadevush",
+	"secondName": "Baraventura",
+	"lastName": "Kasciushka",
+	"department": {
+		"id": 3,
+		"department": "FBR"
+	},
+	"position": {
+		"id": 1,
+		"position": "manager"
+	}
+},
+{
+	"id": 3,
+	"firstName": "Kastus",
+	"secondName": "Syamenavich",
+	"lastName": "Kalinouski",
+	"department": {
+		"id": 1,
+		"department": "security"
+	},
+	"position": {
+		"id": 2,
+		"position": "contractor"
+	}
+},
+{
+	"id": 4,
+	"firstName": "Ihnat",
+	"secondName": "Vincentovich",
+	"lastName": "Dameyka",
+	"department": {
+		"id": 1,
+		"department": "security"
+	},
+	"position": {
+		"id": 2,
+		"position": "contractor"
+	}
+},
+{
+	"id": 5,
+	"firstName": "Mark",
+	"secondName": "Andreevich",
+	"lastName": "Shagal",
+	"department": {
+		"id": 1,
+		"department": "security"
+	},
+	"position": {
+		"id": 2,
+		"position": "contractor"
+	}
+}]
