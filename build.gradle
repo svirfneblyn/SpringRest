@@ -1,34 +1,42 @@
 buildscript {
     repositories {
-        maven { url "http://repo.spring.io/libs-release" }
-        mavenLocal()
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.4.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
     }
 }
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'gs-rest-service'
+    baseName = 'rest-service'
     version =  '0.1.0'
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
-    maven { url "http://repo.spring.io/libs-release" }
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("com.h2database:h2")
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
-    testCompile("junit:junit")
-}
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.6.1'
+// https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.6.1'
+    // https://mvnrepository.com/artifact/org.springframework.hateoas/spring-hateoas
+    compile group: 'org.springframework.hateoas', name: 'spring-hateoas', version: '0.23.0.RELEASE'
+    compile("org.springframework.boot:spring-boot-starter-hateoas")
+    compile("org.springframework.boot:spring-boot-starter-parent:1.2.6.RELEASE")
 
+}

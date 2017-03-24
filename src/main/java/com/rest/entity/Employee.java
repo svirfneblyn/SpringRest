@@ -1,4 +1,4 @@
-package service.rest.entity;
+package com.rest.entity;
 
 
 import javax.persistence.*;
@@ -21,10 +21,10 @@ public class Employee implements Serializable {
     private Long managerId;
 
     @OneToOne
-    @JoinColumn(name ="department_id", insertable = false, updatable = false)
+    @JoinColumn(name ="department_id")
     private Department department;
     @OneToOne
-    @JoinColumn(name ="position_id", insertable = false, updatable = false)
+    @JoinColumn(name ="position_id")
     private Position position;
 
     public void setId(long id) {

@@ -1,0 +1,88 @@
+GET:  http: //localhost: 8081/department/2
+{
+	"department": {
+		"id": 2,
+		"department": "buisness"
+	},
+	"_links": {
+		"self": {
+			"href": "http://localhost:8081/department/2"
+		}
+	}
+}
+
+GET: http: //localhost: 8081/department {
+	[{
+		"id": 1,
+		"department": "security"
+	},
+	{
+		"id": 2,
+		"department": "buisness"
+	},
+	{
+		"id": 3,
+		"department": "FBR"
+	},
+	{
+		"id": 4,
+		"department": "BSU"
+	}
+	]
+	
+POST: http: //localhost: 8081/department	
+
+{
+		"id": 5,
+		"department": "POPOROR"
+	}
+	
+	GET: http: //localhost: 8081/department {
+	[{
+		"id": 1,
+		"department": "security"
+	},
+	{
+		"id": 2,
+		"department": "buisness"
+	},
+	{
+		"id": 3,
+		"department": "FBR"
+	},
+	{
+		"id": 4,
+		"department": "BSU"
+	},
+	{
+		"id": 5,
+		"department": "POPOROR"
+	}
+	]
+	PUT: http: //localhost: 8081/department/5	
+	
+	{"id":5,"department":"OROR"}
+	
+	GET: http: //localhost: 8081/department {
+	[{
+		"id": 1,
+		"department": "security"
+	},
+	{
+		"id": 2,
+		"department": "buisness"
+	},
+	{
+		"id": 3,
+		"department": "FBR"
+	},
+	{
+		"id": 4,
+		"department": "BSU"
+	},
+	{
+		"id": 5,
+		"department": "OROR"
+	}
+	]
+	

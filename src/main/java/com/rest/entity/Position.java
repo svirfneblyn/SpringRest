@@ -1,19 +1,21 @@
-package service.rest.entity;
+package com.rest.entity;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@Table(name="positions")
+@Table(name = "positions")
 public class Position implements Serializable {
 
     private static final long serialVersionUID = 6075455009845284374L;
     @Id
     @Column(name = "position_id")
     private Long id;
-
+    @Column(name = "position")
     private String position;
-
 
     public Position() {
     }
@@ -50,12 +52,9 @@ public class Position implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Position)) return false;
-
         Position position1 = (Position) o;
-
         if (getId() != null ? !getId().equals(position1.getId()) : position1.getId() != null) return false;
         return getPosition() != null ? getPosition().equals(position1.getPosition()) : position1.getPosition() == null;
-
     }
 
     @Override

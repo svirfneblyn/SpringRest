@@ -1,0 +1,29 @@
+GEThttp: //localhost: 8081/position[{
+	"id": 1,
+	"position": "managerrr"
+},
+{
+	"id": 2,
+	"position": "contractor"
+},
+{
+	"id": 3,
+	"position": "asdwqe"
+}]POSThttp: //localhost: 8081/positionresponse: {
+	"id": 3,
+	"position": "asdwqe"
+}http: //localhost: 8081/position/3HTTP/1.1200Content-Length: 0Date: Fri,
+24Mar201714: 20: 19GMTGEThttp: //localhost: 8081/position[{
+	"id": 1,
+	"position": "managerrr"
+},
+{
+	"id": 2,
+	"position": "contractor"
+}]PUThttp: //localhost: 8081/position{
+	"id": 1,
+	"position": "manager"
+}GEThttp: //localhost: 8081/position/1{
+	"id": 1,
+	"position": "manager"
+}

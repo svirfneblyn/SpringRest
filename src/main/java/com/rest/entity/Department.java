@@ -1,4 +1,4 @@
-package service.rest.entity;
+package com.rest.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +14,7 @@ public class Department implements Serializable {
     @Id
     @Column(name = "department_id")
     private long id;
+    @Column(name = "department")
     private String department;
 
     public Department() {
